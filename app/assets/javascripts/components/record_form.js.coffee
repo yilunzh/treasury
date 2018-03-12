@@ -6,7 +6,7 @@
 	
 	valid: ->
 		@state.title && @state.date && @state.amount
-	
+
 	handleChange: (e) -> 
 		name = e.target.name
 		@setState "#{ name }": e.target.value
@@ -52,5 +52,5 @@
 			React.DOM.button
 				type: 'submit'
 				className: 'btn btn-primary'
-				disabled: !@valid()
+				disabled: !@valid()        
 				'Create record'
